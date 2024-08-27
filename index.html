@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 400px;
+            font-weight: bolder;
+            font-size: xx-large;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            border-radius: 15px;
+
+            /* transition properties */
+            transition-property: all;
+            transition-duration: 0.5s;
+            /* transition-delay: 1s; */
+            transition-timing-function: ease;
+
+            /* Text in center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* in order ro perform transition we have to use pseudo classes like :hover */
+        .box:hover {
+           margin-inline: 25px;
+            width: 350px;
+            /* ab hamne yahan just width pe transition apply ki hai or kisi pe nhi */
+
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hover to see transition
+    </div>
+</body>
+</html>
